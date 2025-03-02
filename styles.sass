@@ -54,8 +54,8 @@ body
   --Cyan: hsl(180, 62%, 55%)
   --Orange: hsl(34, 97%, 64%)
   --Blue: hsl(212, 86%, 64%)
-  --Grey-500: hsl(234, 12%, 34%)
   --Grey-400: hsl(212, 6%, 44%)
+  --Grey-500: hsl(234, 12%, 34%)
   --White: hsl(0, 0%, 100%)
   --Body-Font-Size: 15px
 
@@ -84,5 +84,82 @@ body
 
 header
   text-align: center
-  margin-block: 1.5rem
+  font-size: var(--Body-Font-Size)
+  color: var(--Grey-500)
+  margin-block: 2.5rem
+
+h1
+  margin-block-end: 1.5rem
+
+h1 p:first-child
+  color: var(--Grey-400)
+  font-size: 1.55rem
+
+h1 p:last-child
+  color: var(--Grey-500)
+  font-size: 1.55rem
+  line-height: 1.25
+
+main
+  display: grid
+  gap: 2rem
+  margin-block-end: 3.5rem
+  border: 3px solid blue
+
+.card
+  display: grid
+  border-radius: .5rem
+  background-color: var(--White)
+  box-shadow: 0 1rem 1rem 0 rgba(36, 11, 177, 0.128)
+  padding: 1.75rem 1.75rem 2.25rem 1.75rem
+  gap: .5rem
+  max-width: 20rem
+
+.card:nth-child(1)::after
+  content: url(./images/icon-supervisor.svg)
+  justify-self: end
+
+.card:nth-child(2)::after
+  content: url(./images/icon-team-builder.svg)
+  justify-self: end
+
+.card:nth-child(3)::after
+  content: url(./images/icon-karma.svg)
+  justify-self: end
+
+.card:nth-child(4)::after
+  content: url(./images/icon-calculator.svg)
+  justify-self: end
+
+.card:nth-child(1)
+  border-top: .25rem solid var(--Cyan)
+  grid-area: super
+
+.card:nth-child(2)
+  border-top: .25rem solid var(--Red)
+  grid-area: team
+
+.card:nth-child(3)  
+  border-top: .25rem solid var(--Orange)
+  grid-area: karma
+
+.card:nth-child(4)
+  border-top: .25rem solid var(--Blue)
+  grid-area: calc
+
+.card p 
+  font-size: var(--Body-Font-Size)
+  color: var(--Grey-400)
+  margin-block-end: 1.5rem
+
+@media screen and (min-width: 48rem)
+  main
+    border: 3px solid red
+    grid-template-areas: 
+      ". team ."
+      "super team calc"
+      "super karma calc"
+      ". karma ."
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(4, auto)
 

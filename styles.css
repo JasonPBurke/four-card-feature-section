@@ -80,7 +80,7 @@ body {
   display: grid;
   place-items: center;
   min-height: 100vh;
-  background-color: var(--White);
+  background-color: hsl(0, 0%, 96%);
   padding-inline: 1.75rem;
 }
 
@@ -88,7 +88,7 @@ header {
   text-align: center;
   font-size: var(--Body-Font-Size);
   color: var(--Grey-500);
-  margin-block: 2.5rem;
+  margin-block: 4.5rem;
   max-width: 34rem;
 }
 

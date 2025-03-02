@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after 
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd 
+  margin: 0
+  padding: 0
+
+body
+  font-family: 'Roboto', sans-serif
+  font-size: 16px
+  line-height: 1.5
+  color: #333
+
+a 
+  text-decoration: none
+  color: inherit
+
+ul, ol
+  list-style: none
+
+input, textarea, select, button
+  font-family: inherit
+  font-size: inherit
+  line-height: inherit
+  border: none
+  outline: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+  
+img
+  max-inline-size: 100%
+  block-size: auto
+  border-radius: 1rem 1rem 0 0
+
+p
+  font-size: 14px
+  color: var(--Grey)
+
+body
+  font-size: 1rem
+  line-height: 1.5
+
+
+/* end reset*/
+
+:root 
+  --Red: hsl(0, 78%, 62%)
+  --Cyan: hsl(180, 62%, 55%)
+  --Orange: hsl(34, 97%, 64%)
+  --Blue: hsl(212, 86%, 64%)
+  --Grey-500: hsl(234, 12%, 34%)
+  --Grey-400: hsl(212, 6%, 44%)
+  --White: hsl(0, 0%, 100%)
+  --Body-Font-Size: 15px
+
+.poppins-extralight 
+  font-family: "Poppins", sans-serif
+  font-weight: 200
+  font-style: normal
+
+.poppins-regular 
+  font-family: "Poppins", sans-serif
+  font-weight: 400
+  font-style: normal
+
+
+.poppins-semibold 
+  font-family: "Poppins", sans-serif
+  font-weight: 600
+  font-style: normal
+
+body
+  display: grid
+  place-items: center
+  min-height: 100vh
+  background-color: var(--White)
+  padding-inline: 1.75rem
+
+header
+  text-align: center
+  margin-block: 1.5rem
+
